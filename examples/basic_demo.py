@@ -66,7 +66,7 @@ def main():
     print("3. Interactive chat demo:")
     print("   (Note: Requires OpenAI API key for real responses)")
 
-    chat = LeannChat("demo_knowledge.leann")
+    chat = LeannChat("demo_knowledge.leann", llm_config={"type": "hf", "model": "LiquidAI/LFM2-350M"})
 
     # Demo questions
     demo_questions: list[str] = [
